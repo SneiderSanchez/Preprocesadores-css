@@ -1,21 +1,8 @@
--var titulo = "Titulo Principal"
--var titulos = ["Subtitulo 1", "Subtitulo 2" , "Subtitulo 3"]
--var lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ex mi, gravida sit amet imperdiet vel, sodales a mi. Proin sit amet tellus nec nisl bibendum ornare nec at augue. Integer semper feugiat varius."
-mixin caja(imagen, titulo, contenido)
-  .caja
-    .caja__imagen: img(src="images/" + imagen)
-    .caja__contenido
-      h3 #{titulo}
-      p #{contenido} 
-      
+include configuraciones.pug
 doctype html
 html
   include head.pug
   body 
-    header
-      h1 PlatziGames
-      if usuario 
-        a Hola #{usuario}
-      else
-        a.boton Registro
+    include header.pug
     block contenido
+    include footer.pug
