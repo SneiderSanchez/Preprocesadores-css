@@ -125,3 +125,40 @@ footer li {
 	list-style: none;
 	margin: 0 20px;
 }
+
+
+.menu{
+	background-color: #eef1f8;
+	display:grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 1fr;
+}
+.menu__lista{
+	grid-column: 1/2;
+	margin: 1.5em 0 10em 4em;
+	grid-row: 1/2;
+}
+.menu__image{
+	grid-column: 1/2;
+	margin: 0 auto;
+	grid-row: 1/2;
+}
+.contenido--ConMenu{
+	background-color: white;
+	grid-column: 2/end;
+	grid-row: 1/end;
+	padding: 4rem;
+}
+.contenido--ConMenu p{
+	font-size: 18px
+}
+.mainTitleMenu{
+	font-weight: 500;
+	margin-top: 2rem;
+}
+.subTitleMenu{
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: #354d95;
+	margin-top: 2rem;
+}
